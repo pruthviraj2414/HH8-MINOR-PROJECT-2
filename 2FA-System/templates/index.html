@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2FA System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 2FA System (TOTP)</h1>
+    <p class="subtitle">Scan the QR code using Google Authenticator</p>
+
+    <img src="data:image/png;base64,{{ qr }}" class="qr">
+
+    <p class="secret"><b>Secret Key:</b> {{ secret }}</p>
+
+    <form method="POST">
+        <input type="text" name="otp" placeholder="Enter OTP" required>
+        <button type="submit">Verify OTP</button>
+    </form>
+
+    {% if result is not none %}
+        {% if result %}
+            <p class="success">✅ OTP Verified Successfully</p>
+        {% else %}
+            <p class="error">❌ Invalid OTP</p>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>
