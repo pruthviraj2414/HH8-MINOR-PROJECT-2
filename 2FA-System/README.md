@@ -1,12 +1,12 @@
 # 🔐 2FA System (TOTP Based Authentication)
 
 ## Short Description
-Multi-factor login system using Time-Based One-Time Passwords (TOTP).
+Multi-Factor Login System using Time-Based One-Time Password (TOTP).
 
 ## Brief Description
-This project implements a Two-Factor Authentication (2FA) system using TOTP.
-A secret key is generated and displayed as a QR code, which can be scanned using
-Google Authenticator. The OTP generated is verified on the server side.
+This project includes an implementation of a Two-Factor Authentication system based on TOTP.
+A secret key is generated and displayed in the form of a QR code, which is scanned using
+Google Authenticator. The OTP is verified on the server side.
 
 ## Tools Used
 - Python
@@ -25,4 +25,4 @@ Google Authenticator. The OTP generated is verified on the server side.
    http://127.0.0.1:5000/
 
 ## Notes
-Ensure system time is synced (NTP) for correct OTP validation.
+Sync the time of the system (NTP) for proper OTP verification.
