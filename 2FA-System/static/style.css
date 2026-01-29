@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #0e01008f, #1a01019f);
+    background: linear-gradient(135deg, #0f0101, #1a01019f);
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     display: flex;
@@ -9,12 +9,12 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgb(238, 234, 234);
     padding: 25px;
     width: 360px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(10, 7, 194, 0.74);
 }
 
 h1 {
@@ -47,7 +47,7 @@ button {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background: #1e3c72;
+    background: #054ce6;
     color: white;
     border: none;
     cursor: pointer;

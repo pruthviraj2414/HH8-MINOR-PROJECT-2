@@ -5,8 +5,8 @@ Multi-Factor Login System using Time-Based One-Time Password (TOTP).
 
 ## Brief Description
 This project includes an implementation of a Two-Factor Authentication system based on TOTP.
-A secret key is generated and displayed in the form of a QR code, which is scanned using
-Google Authenticator. The OTP is verified on the server side.
+A secret key is generated and displayed in the form of a QR code, which is scanned using Google Authenticator,
+The OTP is verified on the server side.
 
 ## Tools Used
 - Python
